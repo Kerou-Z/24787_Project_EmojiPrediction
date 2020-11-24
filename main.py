@@ -52,13 +52,17 @@ if __name__ == '__main__':
     # 读数据集
     data = pd.read_csv('Train.csv')
     x_train = data['TEXT'].values
+    y_train=data['Label'].values
+    
     data_test = pd.read_csv('Test.csv')
     x_test = data_test['TEXT'].values
+    
     emoji_map = pd.read_csv('Mapping.csv')
 
     # 数据集预处理
     pred_corpus = corpus_pre(X_train)
-
+    Y_train=to_categorical(y_train)
+    
     # Tokenizer
     tokenizer = Tokenizer(filters='!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n', split=" ",
                           lower=True)  # filters：需要去除的符号 lower：转换成小写
