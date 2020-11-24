@@ -29,7 +29,7 @@ dataset download link: https://www.kaggle.com/hariharasudhanas/twitter-emoji-pre
    Allocate an id(integer) to every word shown in the whole tokenized corpus. This is saved in a dictionary called vocab. #ind_dict = {'word', id}
  
    Transform every tweet text to a word index(id) sequence.
-3. Use glove.6B.50d.txt file to create a dictionary lookup_dict. #pd_dict={'word', 50d_word_vector}
+3. Use glove.6B.50d.txt file to create a dictionary lookup_dict. #lookup_dict={'word', 50d_word_vector}
 4. Generate a weight matrix in which the i_th column is the 50-dimensional word vector of a word whose id is i, using lookup_dict and ind_dict. 
 5. Load the weight matrix into the Keras Embedding layer.
     Connect two LSTM layers to the Embedding layer.
