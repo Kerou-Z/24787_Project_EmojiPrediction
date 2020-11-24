@@ -1,9 +1,14 @@
 ## Next
 wor2vec
+
 100-dimensional glove
+
 Bi-LSTM or CNN
+
 Naives Bayes or SVM
+
 stop word necessary?
+
 English comments
 
 
