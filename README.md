@@ -1,3 +1,12 @@
+## Next
+wor2vec
+100-dimensional glove
+Bi-LSTM or CNN
+Naives Bayes or SVM
+stop word necessary?
+English comments
+
+
 ## Goal
 The goal of this project is to generate a proper emoji for an input sentence. This project uses the method of LSTM with Glove embeddings.
 
@@ -12,11 +21,11 @@ dataset download link: https://www.kaggle.com/hariharasudhanas/twitter-emoji-pre
 1. Preprocess every tweet text by deleting stopwords, hashtag words, etc. 
 2. Tokenize every tweet to lower cases without characters other than alphabets.
 
-   Allocate an id(integer) to every word shown in the whole tokenized corpus. This is saved in a dictionary called vocab. #vocab = {'word', id}
+   Allocate an id(integer) to every word shown in the whole tokenized corpus. This is saved in a dictionary called vocab. #ind_dict = {'word', id}
  
    Transform every tweet text to a word index(id) sequence.
-3. Use glove.6B.50d.txt file to create a dictionary pre_dict. #pre_dict={'word', 50d_word_vector}
-4. Generate a weight matrix in which the i_th column is the 50-dimensional word vector of a word whose id is i, using pre_dict and vocab. 
+3. Use glove.6B.50d.txt file to create a dictionary lookup_dict. #pd_dict={'word', 50d_word_vector}
+4. Generate a weight matrix in which the i_th column is the 50-dimensional word vector of a word whose id is i, using lookup_dict and ind_dict. 
 5. Load the weight matrix into the Keras Embedding layer.
     Connect two LSTM layers to the Embedding layer.
     Use a Dense layer with softmax as an activation function for prediction.
