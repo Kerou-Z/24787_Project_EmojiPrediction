@@ -27,9 +27,9 @@ def tokenize(pred_corpus, l1):
     seqed_corpus = tokenizer.texts_to_sequences(pred_corpus)  # 将数据集序列化，就是把句中每一个单词编号
     X_out = sequence.pad_sequences(seqed_corpus, maxlen=l1, padding='post')  # 填充与截断序列，就是使得每句话对应的序列长度都是'maxlen'
     return X_out
-def lookup(vocab, pred_dict):
+def lookup(vocab, pred_dict,embedding_dim):
     vocab_size = len(vocab) + 1 # 因为fit_on_texts时自动去除了1个最不常见的词
-    W = np.zeros((vocab_size, 50))
+    W = np.zeros((vocab_size, embedding_dim))
     for word, i in vocab.items(): # .items返回可遍历的元组数组
         if word in pred_dict: # word是'glove.6B.50d.txt'中的; raw_embedding是'train.csv'中的
             W[i] = pred_dict[word]
