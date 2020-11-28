@@ -1,17 +1,3 @@
-## Next
-wor2vec
-
-100-dimensional glove
-
-Bi-LSTM or CNN
-
-Naives Bayes or SVM
-
-stop word necessary?
-
-English comments
-
-
 ## Goal
 The goal of this project is to generate a proper emoji for an input sentence. This project uses the method of LSTM with Glove embeddings.
 
@@ -37,3 +23,8 @@ dataset download link: https://www.kaggle.com/hariharasudhanas/twitter-emoji-pre
     
 ## Implementation
  Execute main.py 
+ 
+## Next
+wor2vec
+
+Naives Bayes or SVM
