@@ -26,5 +26,9 @@ dataset download link: https://www.kaggle.com/hariharasudhanas/twitter-emoji-pre
  
 ## Next
 wor2vec
-
-Naives Bayes or SVM
+bidirectional LSTM
+Shallow model (Naives Bayes or SVM)
+Jiarun
+Yongyi
+Kerou
+Tianyu
