@@ -28,7 +28,7 @@ dataset download link: https://www.kaggle.com/hariharasudhanas/twitter-emoji-pre
 wor2vec
 bidirectional LSTM
 Shallow model (Naives Bayes or SVM)
-Jiarun
-Yongyi
-Kerou
-Tianyu
+   * Jiarun SVM
+   * Yongyi Bayes
+   * Kerou SVM
+   * Tianyu word2vec
