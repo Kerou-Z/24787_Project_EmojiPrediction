@@ -1,6 +1,15 @@
 ## Goal
 The goal of this project is to generate a proper emoji for an input sentence. This project uses the method of LSTM with Glove embeddings.
 
+## Modules
+### Dataset
+### Embedding
+#### GloVE
+#### word2vec
+### Model
+#### LSTM
+#### CNN
+
 ## Dataset info
 This project uses GloVe for obtaining vector representations for words. We use glove.6B.50d, a pre-trained word vectors file containing 400K different vocabularies, with every vocabulary represented by a 50-dimensional word vector.
 glove (embedding representations) download link: https://www.kaggle.com/anindya2906/glove6b
