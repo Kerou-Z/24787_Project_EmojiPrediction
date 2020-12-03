@@ -7,7 +7,7 @@ def corpus_pre(X):  # numpy.ndarray only works for data structure in train.csv
         words=tweets.split(" ")
         str = ""
         for word in words:
-            if word[0] != "@" and word not in stopper:
+            if word[0] != "@": # and word not in stopper:
                 if word[0] == "#":
                     word = word[1:]
                 str += word + " "
@@ -23,10 +23,7 @@ def dict_pre(file):  # wordembedding
         pred_dict[word]=coefs
     f.close()
     return pred_dict
-def tokenize(pred_corpus, l1):
-    seqed_corpus = tokenizer.texts_to_sequences(pred_corpus)  # vectorize the dataset，namely number each word
-    X_out = sequence.pad_sequences(seqed_corpus, maxlen=l1, padding='post')  # fill in or truncate each sequence，to let the sequence length for each sentence to be 'maxlen'
-    return X_out
+
 def lookup(vocab, pred_dict,embedding_dim):
     vocab_size = len(vocab) + 1 # in fit_on_texts process, the least common word was removed automatically
     W = np.zeros((vocab_size, embedding_dim))
