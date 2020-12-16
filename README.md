@@ -4,8 +4,8 @@ The goal of this project is to generate a proper emoji for an input sentence. Th
 ## Modules
 ### Dataset
 ### Embedding
-#### GloVE
-#### word2vec
+#### GloVe
+#### Word2vec
 ### Model
 #### LSTM
 #### CNN
