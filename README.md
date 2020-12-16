@@ -31,7 +31,7 @@ dataset download link: https://www.kaggle.com/hariharasudhanas/twitter-emoji-pre
     Use a Dense layer with softmax as an activation function for prediction.
     
 ## Implementation
- Execute main.py 
+ Execute main_\*.ipynb files for different combinations of word embedding and DL methods.
  
 ## Next
 Shallow model (Naives Bayes or SVM)
