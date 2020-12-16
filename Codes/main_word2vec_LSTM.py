@@ -6,7 +6,7 @@ from keras.utils import to_categorical
 import Embedding as em
 from keras.preprocessing.text import Tokenizer
 import numpy as np
-import Model as mo
+import Model_LSTM as mo
 import math
 #%%
 embedding_dim=100
