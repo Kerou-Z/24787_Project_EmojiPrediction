@@ -1,5 +1,5 @@
 ## Goal
-The goal of this project is to generate a proper emoji for an input sentence. This project uses the method of LSTM with Glove embeddings.
+The goal of this project is to generate a proper emoji for an input sentence. This project uses the method of LSTM & CNN with Glove & word2vec embeddings.
 
 ## Modules
 ### Dataset
@@ -17,7 +17,7 @@ glove (embedding representations) download link: https://www.kaggle.com/anindya2
 This project uses the Twitter Emoji Prediction dataset. The dataset contains a training dataset of 69832 tweets and their labels (range from 0 to 19) and a test dataset of 25920 tweets. Label-Emoji mapping can be found in the Mapping.csv file.
 dataset download link: https://www.kaggle.com/hariharasudhanas/twitter-emoji-prediction?select=Test.csv
 
-## Overview of the project method
+## Overview of the project method (LSTM & GloVe)
 1. Preprocess every tweet text by deleting stopwords, hashtag words, etc. 
 2. Tokenize every tweet to lower cases without characters other than alphabets.
 
@@ -34,10 +34,8 @@ dataset download link: https://www.kaggle.com/hariharasudhanas/twitter-emoji-pre
  Execute main.py 
  
 ## Next
-wor2vec
-bidirectional LSTM
 Shallow model (Naives Bayes or SVM)
    * Jiarun SVM
    * Yongyi Bayes
    * Kerou SVM
-   * Tianyu word2vec
+   * Tianyu Bayes
